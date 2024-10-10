@@ -8,7 +8,7 @@ export default function Home() {
       <span className="not-italic text-7xl">🥒</span> wimf <span className="not-italic text-7xl">🥑</span>
         </h1>
       </div>
-      <p className="text-gray-500 text-lg mb-8 p-2">What's In My Fridge?</p>
+      <p className="text-gray-500 text-lg mb-8 p-2">What&rsquo;s In My Fridge?</p>
 
       {/* Image Upload Component */}
       <ImageUpload />

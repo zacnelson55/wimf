@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import * as tf from '@tensorflow/tfjs';
 import foodLabels101 from '../public/food_labels.json';
+import Image from 'next/image';
 
 export default function ImageUpload() {
   const [image, setImage] = useState(null);
@@ -83,7 +84,7 @@ export default function ImageUpload() {
 
         {preview && (
           <div className="mt-4">
-            <img id="uploaded-image" src={preview} alt="Preview" className="w-full h-auto max-w-sm rounded-lg shadow-lg" />
+            <Image id="uploaded-image" src={preview} alt="Preview" width={500} height={500} className="w-full h-auto max-w-sm rounded-lg shadow-lg" />
           </div>
         )}
 
